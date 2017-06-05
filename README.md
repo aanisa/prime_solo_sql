@@ -1,4 +1,6 @@
-Setup
+# Prime Digital Academy - SQL Query Exercise
+
+## Setup
 
 Follow the instructions below before continuing with this challenge.
 Create your database, table, and data
@@ -12,16 +14,16 @@ Please follow the instructions below to create a new database with this table an
 5. Double-click the 'SQL Query' icon to bring up the query window.
 6. Paste the following query into the query box to create the syntax_practice table and populate it with data. Remember to click the Execute query button.
 
-CREATE TABLE syntax_practice (
+`CREATE TABLE syntax_practice (
     user_id serial PRIMARY KEY,
     username character varying(12),
     city character varying(128),
     transactions_completed integer,
     transactions_attempted integer,
     account_balance numeric(12,2)
-);
+);`
 
-INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('shawn', 'chicago', 5, 10, 355.80),
+`INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('shawn', 'chicago', 5, 10, 355.80),
 ('cherise', 'minneapolis', 9, 9, 4000.00),
 ('larry', 'minneapolis', 3, 4, 77.01),
 ('dallas', 'new york', 6, 12, 0.99),
@@ -30,24 +32,24 @@ INSERT INTO syntax_practice (username, city, transactions_completed, transaction
 ('davey', 'chicago', 9, 99, 98.04),
 ('ora', 'phoenix', 88, 90, 3.33),
 ('grace', 'miami', 7, 9100, 34.78),
-('hope', 'phoenix', 4, 10, 50.17);
+('hope', 'phoenix', 4, 10, 50.17);`
 
 
-GitHub repo
+### GitHub repo
 1. Create a GitHub repo named “prime-solo-sql”.
 2 .Create a file called “solution.sql”. You will store your responses to the exercise questions here. NOTE: This is merely a text file with a .sql extension.
 
-Exercise
+### Exercise
 For each of the following questions
 •Write a comment that specifies which question you are answering. (SQL comments are two dashes, followed by text.)
 •Write the SQL query that answers the question, below that comment.
 
 Example question and answer
 -- 0. Get all the users
-SELECT * FROM syntax_practice;
+`SELECT * FROM syntax_practice;`
 
 
-Tasks
+## Tasks
 1. Get all users from Chicago.
 2. Get all users with usernames that contain the letter a.
 3. The bank is giving a new customer bonus! Update all records with an account balance of 0.00 and a transactions_attempted of  Give them a new account balance of 10.00.
